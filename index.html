@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Nishad" width="60">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nishad">Nishad</h1>
+
+          <p class="title">Cyber Security Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nishadsharma01@gmail.com" class="contact-link">nishadsharma01@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919418096721" class="contact-link">+91 9418096721</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-02-12">February 12, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dharamshala, Himachal Pradesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/nishad-sharma" class="social-link" target="_blank">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://github.com/NishadSharma" class="social-link" target="_blank">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://tryhackme.com/p/nishad05" class="social-link" target="_blank">
+      <img src="./assets/images/tryhackme-icon.png" alt="TryHackMe" width="24" height="24">
+    </a>
+  </li>
+
+</ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Dark Mode Toggle Button -->
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+          <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+        </button>
+      </div>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am currently pursuing my Bachelor's degree in Computer Science, fueled by a deep fascination for technology and its endless possibilities. Throughout my academic journey, I have delved into various aspects of computer science, from algorithms and data structures to software engineering and artificial intelligence.
+          </p>
+          <p>
+            My coursework has equipped me with a solid foundation in programming languages such as Java, Python, and C++, as well as hands-on experience with development tools and frameworks.
+          </p>
+          <p>
+            As I continue my journey in computer science, I am eager to explore new opportunities for learning and growth. I am excited about the prospect of applying my skills and knowledge to make meaningful contributions to the ever-evolving tech industry.
+          </p>
+          <p>
+            Let's connect and share our experiences in the world of computer science!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Bug Detection</h4>
+
+                <p class="service-item-text">
+                  Making professional vulnerability scanners through mobile devices.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+          <ul class="clients-list">
+            <li class="clients-item">
+              <img src="./assets/images/client-1.png" alt="Client 1">
+            </li>
+            <li class="clients-item">
+              <img src="./assets/images/client-2.png" alt="Client 2">
+            </li>
+            Add more clients as needed -->
+          <!-- </ul> -->
+        <!-- </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <div class="resume-download">
+          <a href="./assets/My CV.pdf" class="btn" download>
+            <ion-icon name="download-outline"></ion-icon>
+            Download Resume
+          </a>
+        </div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lovely Professional University</h4>
+
+              <span>2022 — 2026</span>
+
+              <p class="timeline-text">
+                B.Tech Computer Science and Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kendriya Vidyalaya, Yol Cantt</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                Intermediate
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kendriya Vidyalaya, Yol Cantt</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Matriculation
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Waste Warriors Society - Intern</h4>
+
+              <span>June 2023 — July 2023</span>
+
+              <p class="timeline-text">
+                Worked as a Cyber Security Intern, focusing on web application security and vulnerability assessment.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+        
+          <div class="skills-columns">
+        
+            <!-- Technical Skills Column -->
+            <div class="skills-column">
+              <h4 class="h4 skills-subtitle">Technical Skills</h4>
+              <ul class="skills-list content-card">
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Web Design</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Graphic Design</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Branding</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">WordPress</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Java Programming</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        
+            <!-- Soft Skills Column -->
+            <div class="skills-column">
+              <h4 class="h4 skills-subtitle">Soft Skills</h4>
+              <ul class="skills-list content-card">
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Communication</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Teamwork</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Problem Solving</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Adaptability</h5>
+                  </div>
+                </li>
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Time Management</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        
+          </div>
+        
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cyber Security</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Cyber Security</button>
+              </li>
+
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+  <li class="project-item active" data-filter-item data-category="cyber security">
+    <a href="https://github.com/NishadSharma/EHoney" target="_blank">
+
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <img src="./assets/images/project-1.png" alt="EHoney" loading="lazy">
+      </figure>
+
+      <h3 class="project-title">EHoney</h3>
+      <p class="project-category">Cyber Security</p>
+
+    </a>
+  </li>
+
+  <li class="project-item active" data-filter-item data-category="web development">
+    <a href="https://github.com/NishadSharma/Library-Management-System" target="_blank">
+
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <img src="./assets/images/project-2.png" alt="Orizon" loading="lazy">
+      </figure>
+
+      <h3 class="project-title">Library Management System</h3>
+      <p class="project-category">Web Development</p>
+
+    </a>
+  </li>
+
+  <li class="project-item active" data-filter-item data-category="web design">
+    <a href="https://github.com/NishadSharma/FTP-Server-Client" target="_blank">
+
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <img src="./assets/images/project-3.png" alt="Fundo" loading="lazy">
+      </figure>
+
+      <h3 class="project-title">FTP Server & Client</h3>
+      <p class="project-category">Cyber Security</p>
+
+    </a>
+  </li>
+
+  <li class="project-item active" data-filter-item data-category="web development">
+    <a href="https://github.com/NishadSharma/Firewall-Threat-Detection-System" target="_blank">
+
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <img src="./assets/images/project-4.png" alt="Summary" loading="lazy">
+      </figure>
+
+      <h3 class="project-title">Firewall & Threat Detection</h3>
+      <p class="project-category">Cyber Security</p>
+
+    </a>
+  </li>
+
+  <li class="project-item active" data-filter-item data-category="web development">
+    <a href="https://example.com/project-arrival" target="_blank">
+
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <img src="./assets/images/project-9.png" alt="Arrival" loading="lazy">
+      </figure>
+
+      <h3 class="project-title">Arrival</h3>
+      <p class="project-category">Web Development</p>
+
+    </a>
+  </li>
+
+</ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+<!-- Replace the Blog section with the following Certifications section -->
+
+<article class="certifications" data-page="certifications">
+
+  <header>
+    <h2 class="h2 article-title">Certifications</h2>
+  </header>
+
+  <section class="certifications-grid">
+
+    <div class="certification-item">
+      <a href="https://media.geeksforgeeks.org/courses/certificates/3355023c5944e1621ba0e3dbd5433601.pdf" target="_blank">
+
+        <figure class="certification-banner-box">
+          <img src="./assets/images/certification-1.png" alt="Master Java Programming" loading="lazy">
+        </figure>
+
+        <h3 class="h3 certification-item-title">Master Java Programming</h3>
+        <p class="certification-text">
+          Earned from GeeksForGeeks, this certification validates skills in Java Programming.
+        </p>
+
+      </a>
+    </div>
+
+    <div class="certification-item">
+      <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL24CS118S167020178804431793" target="_blank">
+
+        <figure class="certification-banner-box">
+          <img src="./assets/images/certification-2.png" alt="Cloud Computing" loading="lazy">
+        </figure>
+
+        <h3 class="h3 certification-item-title">Cloud Computing</h3>
+        <p class="certification-text">
+          Earned from NPTEL, demonstrates expertise in Cloud Computing.
+        </p>
+
+      </a>
+    </div>
+
+    <div class="certification-item">
+      <a href="https://coursera.org/verify/VOSSYCFHDBGU" target="_blank">
+
+        <figure class="certification-banner-box">
+          <img src="./assets/images/certification-3.png" alt="Ethical Hacking Essentials" loading="lazy">
+        </figure>
+
+        <h3 class="h3 certification-item-title">Ethical Hacking Essentials</h3>
+        <p class="certification-text">
+          Earned from Coursera by EC-Council, validates expertise in bug detection, analysis, and exploitation using tools like Nmap and SQL Injection.
+        </p>
+
+      </a>
+    </div>
+
+    <div class="certification-item">
+      <a href="https://coursera.org/verify/MA37D12PDGDJ" target="_blank">
+
+        <figure class="certification-banner-box">
+          <img src="./assets/images/certification-4.png" alt="Digital Forensics Essentials" loading="lazy">
+        </figure>
+
+        <h3 class="h3 certification-item-title">Digital Forensics Essentials</h3>
+        <p class="certification-text">
+          Earned from Coursera by EC-Council, validates expertise in incident response, analysis, and reporting using tools like DiskDrill and FTK Imager.
+        </p>
+
+      </a>
+    </div>
+
+    <div class="certification-item">
+      <a href="https://www.udemy.com/certificate/UC-ee3f747b-855f-4264-bb68-fb169ce7f888/" target="_blank">
+
+        <figure class="certification-banner-box">
+          <img src="./assets/images/certification-5.png" alt="Data Structures & Algorithms" loading="lazy">
+        </figure>
+
+        <h3 class="h3 certification-item-title">Data Structures & Algorithms</h3>
+        <p class="certification-text">
+          Earned from Udemy, demonstrates expertise in data structures and algorithms.
+        </p>
+
+      </a>
+    </div>
+
+  </section>
+
+</article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703673052!2d76.29856558430892!3d32.21681318822318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1745239298563!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
